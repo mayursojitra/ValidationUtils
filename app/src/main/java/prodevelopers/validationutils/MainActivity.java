@@ -13,8 +13,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if (Validation.validateEmail(this, "mayur.sojitra55@gmailcom", Toast.LENGTH_LONG)) {
-
-        }
+        Validation.validateEmail(this, "mayur.sojitra55@gmailcom", Toast.LENGTH_LONG);
     }
 }
