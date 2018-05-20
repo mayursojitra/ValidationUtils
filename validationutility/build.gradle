@@ -1,5 +1,29 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'ValidationUtils'
+    bintrayName = 'ValidationUtils'
+
+    publishedGroupId = 'com.murait.validation'
+    libraryName = 'ValidationUtils'
+    artifact = 'ValidationUtils'
+
+    libraryDescription = 'Validation Utils for android'
+
+    siteUrl = 'https://github.com/mayursojitra/ValidationUtils'
+    gitUrl = 'https://github.com/mayursojitra/ValidationUtils.git'
+
+    libraryVersion = '2.0.5'
+
+    developerId = 'mayursojitra'
+    developerName = 'Mayur Sojitra'
+    developerEmail = 'mayur.sojitra55@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 27
 
