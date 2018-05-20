@@ -13,7 +13,7 @@ publishing {
 }
 
 ext {
-    bintrayRepo = 'ValidationUtils'
+    bintrayRepo = ''
     bintrayName = 'ValidationUtils'
 
     publishedGroupId = 'com.murait.validation'
