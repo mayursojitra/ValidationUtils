@@ -1,4 +1,16 @@
+apply plugin: 'maven-publish'
+apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.android.library'
+
+version '2.0.8'
+
+publishing {
+    publications {
+        Production(MavenPublication) {
+            version this.version
+        }
+    }
+}
 
 ext {
     bintrayRepo = 'ValidationUtils'
@@ -13,7 +25,7 @@ ext {
     siteUrl = 'https://github.com/mayursojitra/ValidationUtils'
     gitUrl = 'https://github.com/mayursojitra/ValidationUtils.git'
 
-    libraryVersion = '2.0.7'
+    libraryVersion = this.version
 
     developerId = 'mayursojitra'
     developerName = 'Mayur Sojitra'
@@ -31,7 +43,7 @@ android {
         minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
-        versionName "2.0.7"
+        versionName this.version
 
     }
 
@@ -43,6 +55,10 @@ android {
     }
 
 }
+
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = publishedGroupId
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
