@@ -1,7 +1,6 @@
 package murait.validation;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.widget.Toast;
 
@@ -40,7 +39,7 @@ public class Validation {
      * @param toastLength How long to display the message
      * @return true if the email is valid, false otherwise
      */
-    public static boolean validateEmail(@NonNull Context mContext, @NonNull String email, @NonNull int toastLength) {
+    public static boolean validateEmail(Context mContext, String email, int toastLength) {
         email = email.trim();
 
         // If email is empty
@@ -67,7 +66,7 @@ public class Validation {
      * @param toastMsg    The text to show.  Can be formatted text.
      * @return true if the email is valid, false otherwise
      */
-    public static boolean validateEmail(@NonNull Context mContext, @NonNull String email, @NonNull int toastLength, @NonNull CharSequence toastMsg) {
+    public static boolean validateEmail(Context mContext, String email, int toastLength, CharSequence toastMsg) {
         email = email.trim();
 
         // If email is empty
