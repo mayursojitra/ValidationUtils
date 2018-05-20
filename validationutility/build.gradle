@@ -12,8 +12,26 @@ publishing {
     }
 }
 
+task createPom << {
+    pom {
+        project {
+            groupId 'com.murait.validation'
+            artifactId 'ValidationUtils'
+            version this.version
+
+            licenses {
+                license {
+                    name 'The Apache Software License, Version 2.0'
+                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    distribution 'repo'
+                }
+            }
+        }
+    }.writeTo("pom.xml")
+}
+
 ext {
-    bintrayRepo = ''
+    bintrayRepo = 'ValidationUtils'
     bintrayName = 'ValidationUtils'
 
     publishedGroupId = 'com.murait.validation'
