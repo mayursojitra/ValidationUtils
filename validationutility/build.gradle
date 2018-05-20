@@ -13,7 +13,7 @@ publishing {
 }
 
 ext {
-    bintrayRepo = 'maven'
+    bintrayRepo = 'ValidationUtils'
     bintrayName = 'ValidationUtils'
 
     publishedGroupId = 'com.murait.validation'
