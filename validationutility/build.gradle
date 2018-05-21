@@ -2,15 +2,7 @@ apply plugin: 'maven-publish'
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.android.library'
 
-version '3.0.0'
-
-publishing {
-    publications {
-        Production(MavenPublication) {
-            version this.version
-        }
-    }
-}
+version '3.0.5'
 
 ext {
     bintrayRepo = 'ValidationUtils'
@@ -31,28 +23,9 @@ ext {
     developerName = 'Mayur Sojitra'
     developerEmail = 'mayur.sojitra55@gmail.com'
 
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
-
-
-task createPom << {
-    pom {
-        project {
-            groupId 'com.murait.validation'
-            artifactId 'ValidationUtils'
-            version this.version
-
-            licenses {
-                license {
-                    name 'The Apache Software License, Version 2.0'
-                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                    distribution 'repo'
-                }
-            }
-        }
-    }.writeTo("pom.xml")
+    licenseName = 'GNU General Public License version 3'
+    licenseUrl = 'http://www.opensource.org/licenses/gpl-3.0.html'
+    allLicenses = ["GPL-3.0"]
 }
 
 android {
