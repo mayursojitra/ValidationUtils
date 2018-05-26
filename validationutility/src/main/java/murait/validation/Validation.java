@@ -99,6 +99,7 @@ public class Validation {
         if (etText.getText().toString().trim().isEmpty()) {
             return true;
         }
-        return true;
+        
+        return false;
     }
 }
