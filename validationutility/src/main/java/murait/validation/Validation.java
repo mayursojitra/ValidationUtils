@@ -2,7 +2,9 @@ package murait.validation;
 
 import android.content.Context;
 import android.text.TextUtils;
+import android.widget.Adapter;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.util.regex.Matcher;
@@ -99,7 +101,32 @@ public class Validation {
         if (etText.getText().toString().trim().isEmpty()) {
             return true;
         }
-        
+
+        return false;
+    }
+
+    /**
+     * Method to check if email is valid or not
+     *
+     * @param mSpinner The mSpinner which is empty or not
+     * @return true if the mSpinner is empty, false otherwise
+     */
+    public static boolean isEmptySpinner(Spinner mSpinner) {
+
+        //If edittext is NULL
+        if (mSpinner == null) {
+            return true;
+        }
+
+        Adapter mAdapter = mSpinner.getAdapter();
+
+        if (mAdapter == null) {
+            return true;
+        } else {
+            if (mAdapter.getCount() <= 0) {
+                return true;
+            }
+        }
         return false;
     }
 }
