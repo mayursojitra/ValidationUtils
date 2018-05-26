@@ -2,6 +2,7 @@ package murait.validation;
 
 import android.content.Context;
 import android.text.TextUtils;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.regex.Matcher;
@@ -81,5 +82,23 @@ public class Validation {
         }
 
         return mMatcher.matches();
+    }
+
+    /**
+     * Method to check if email is valid or not
+     *
+     * @param etText The EditText which is to be checked for is empty or not
+     * @return true if the edittext is empty, false otherwise
+     */
+    public static boolean isEmptyEditText(EditText etText) {
+
+        //If edittext is NULL
+        if (etText == null) {
+            return true;
+        }
+        if (etText.getText().toString().trim().isEmpty()) {
+            return true;
+        }
+        return true;
     }
 }
