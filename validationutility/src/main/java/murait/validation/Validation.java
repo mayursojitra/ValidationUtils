@@ -87,7 +87,7 @@ public class Validation {
     }
 
     /**
-     * Method to check if email is valid or not
+     * Method to check if edittext is empty or not
      *
      * @param etText The EditText which is to be checked for is empty or not
      * @return true if the edittext is empty, false otherwise
@@ -106,7 +106,7 @@ public class Validation {
     }
 
     /**
-     * Method to check if email is valid or not
+     * Method to check if Spinner is empty or not
      *
      * @param mSpinner The mSpinner which is empty or not
      * @return true if the mSpinner is empty, false otherwise
