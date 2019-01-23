@@ -95,14 +95,9 @@ public class Validation {
     public static boolean isEmptyEditText(EditText etText) {
 
         //If edittext is NULL
-        if (etText == null) {
+        if (etText == null)
             return true;
-        }
-        if (etText.getText().toString().trim().isEmpty()) {
-            return true;
-        }
-
-        return false;
+        return etText.getText().toString().trim().isEmpty();
     }
 
     /**
@@ -120,15 +115,9 @@ public class Validation {
 
         Adapter mAdapter = mSpinner.getAdapter();
 
-        if (mAdapter == null) {
+        if (mAdapter == null)
             return true;
-        } else {
-            if (mAdapter.getCount() <= 0) {
-                return true;
-            }
-        }
-        return false;
+        else return mAdapter.getCount() <= 0;
     }
-
 
 }
