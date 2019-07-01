@@ -120,4 +120,81 @@ public class Validation {
         else return mAdapter.getCount() <= 0;
     }
 
+    /**
+     * Method to check if email is valid or not
+     *
+     * @param phone The Phone Number which is to be checked for is valid or not
+     * @return true if the phone number is valid, false otherwise
+     */
+    public static boolean validatePhoneNumber(String phone) {
+        phone = phone.trim();
+
+        // If phone is empty
+        if (TextUtils.isEmpty(phone)) {
+            return false;
+        }
+
+        for (String phoneRegx : Constants.phonePatterns) {
+            if (Pattern.compile(phoneRegx).matcher(phone).matches())
+                return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * Method to check if email is valid or not
+     *
+     * @param mContext    The context to use.  Usually your {@link android.app.Application}
+     *                    or {@link android.app.Activity} object.
+     * @param phone       The Phone which is to be checked for is valid or not
+     * @param toastLength How long to display the message
+     * @return true if the email is valid, false otherwise
+     */
+    public static boolean validatePhoneNumber(Context mContext, String phone, int toastLength) {
+        phone = phone.trim();
+
+        // If phone is empty
+        if (TextUtils.isEmpty(phone)) {
+            return false;
+        }
+
+        for (String phoneRegx : Constants.phonePatterns) {
+            if (Pattern.compile(phoneRegx).matcher(phone).matches())
+                return true;
+        }
+
+        Toast.makeText(mContext, "Please enter valid phone!!!", toastLength).show();
+
+        return false;
+    }
+
+    /**
+     * Method to check if email is valid or not
+     *
+     * @param mContext    The context to use.  Usually your {@link android.app.Application}
+     *                    or {@link android.app.Activity} object.
+     * @param phone       The Phone which is to be checked for is valid or not
+     * @param toastLength How long to display the message
+     * @param toastMsg    The text to show.  Can be formatted text.
+     * @return true if the email is valid, false otherwise
+     */
+    public static boolean validatePhoneNumber(Context mContext, String phone, int toastLength, CharSequence toastMsg) {
+        phone = phone.trim();
+
+        // If phone is empty
+        if (TextUtils.isEmpty(phone)) {
+            return false;
+        }
+
+        for (String phoneRegx : Constants.phonePatterns) {
+            if (Pattern.compile(phoneRegx).matcher(phone).matches())
+                return true;
+        }
+
+        Toast.makeText(mContext, toastLength, toastLength).show();
+
+        return false;
+    }
+
 }
