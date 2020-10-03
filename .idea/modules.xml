@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ValidationUtils.iml" filepath="$PROJECT_DIR$/.idea/modules/ValidationUtils.iml" group="ValidationUtils" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ValidationUtils-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ValidationUtils-app.iml" group="ValidationUtils/app" />
       <module fileurl="file://$PROJECT_DIR$/ValidationUtils1.iml" filepath="$PROJECT_DIR$/ValidationUtils1.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/validationutility/com.murait.validation-validationutility.iml" filepath="$PROJECT_DIR$/.idea/modules/validationutility/com.murait.validation-validationutility.iml" group="ValidationUtils/validationutility" />
       <module fileurl="file://$PROJECT_DIR$/validationutility/validationutility.iml" filepath="$PROJECT_DIR$/validationutility/validationutility.iml" />
     </modules>
   </component>
