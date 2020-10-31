@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ValidationUtils.iml" filepath="$PROJECT_DIR$/ValidationUtils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/validationutility/validationutility.iml" filepath="$PROJECT_DIR$/validationutility/validationutility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ValidationUtils.iml" filepath="$PROJECT_DIR$/ValidationUtils.iml" group="ValidationUtils" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="ValidationUtils/app" />
+      <module fileurl="file://$PROJECT_DIR$/validationutility/validationutility.iml" filepath="$PROJECT_DIR$/validationutility/validationutility.iml" group="ValidationUtils/validationutility" />
     </modules>
   </component>
 </project>
